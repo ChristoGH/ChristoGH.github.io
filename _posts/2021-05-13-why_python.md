@@ -16,13 +16,12 @@ Python is a programming language or one dialect of ‘machine’ to extend the a
 
 Now having said all of that, some argue convincingly that Python is THE language in 2021.  
 As a programming language it formally comes with four key distinguishing features.
-•	It is an interpreted language as opposed to a compiled language. 
-o	Formally this means a different program, known as the interpreter, reads and executes the code.  This makes messing around in Python very very easy and a novice can safely do lots of 'what ifs' very quickly! 
-•	It is object-oriented.
-o	Without going in to too much detail here, being object oriented allows Python to be many things to many developers with varying levels of expertise and application.  
-•	It is a high-level programming language. 
+1.	It is an *interpreted* language as opposed to a *compiled* language. Formally this means a different program, known as the interpreter, reads and executes the code.  This makes messing around in Python very very easy and a novice can safely do lots of 'what ifs' very quickly! 
+3.	It is object-oriented.
+Without going in to too much detail here, being object oriented allows Python to be many things to many developers with varying levels of expertise and application.  
+5.	It is a high-level programming language. 
 o	This means programmers write instructions in code is easy to understand and read.  This especially true when compared to what is considered low-level languages.  
-•	Python comes with dynamic semantics.  
+4.	Python comes with dynamic semantics.  
 o	In a very simple way Python is free from rigorous constraints necessary and followed by many other languages in declaring and using variables.  Once again this makes Python easy to 'mess around' in, and prototype ideas.
 o	
 But this is not enough to make it as popular as it already is.
