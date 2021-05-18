@@ -4,4 +4,5 @@
  -->
 ![Image of fast.ai logo](images/logo.png)
 
-I stumbled on this very neat guide to blogging: https://www.fast.ai). 
+I stumbled on this very neat guide to blogging here: https://www.fast.ai.  I still need to update the image above to something that 
+will make a little more sense.  In due course.  
