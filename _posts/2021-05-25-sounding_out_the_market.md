@@ -1,0 +1,7 @@
+n https://lnkd.in/gVbfafJ, Dipam Vasani does a superb job of turning audio files  into spectrograms to visualize audio frequencies.  He borrows these ideas from https://lnkd.in/gYCnuGG Turning values from the physical world in to images makes it 'easy' to train machines to do a classification job.  It is relatively easy because it can lean heavily on the extensive work done on traditional images.  One very useful application of the work on sound 'imaging' is to allow a machine to listen out for the characteristic sound of chainsaws in a forest. (In South Africa we can listen out for poachers in a game park!) 
+
+
+
+Another left field application is the price action in the fx market. Currency trading is also a very ‘noisy’ affair in a ‘forest’ full of distractions. Many traders are ‘listening’ out for the sound of the next ‘chainsaw’ event. What if the same method of imaging is applied to this market? Below is a series of spectrograms of our local USDZAR using trades (ticks) right down to the millisecond level.
+
+#currency #southafrica #news #artificialintelligence #machinelearning #trading #datascience
