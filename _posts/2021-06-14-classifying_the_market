@@ -1,0 +1,15 @@
+For the purpose of doing machine learning on the market a classification scheme is quite handy.  What I had in mind here is to mimic what traders look at in the normal course of business.  The ohlc candle is ubiquitous.  On most trading screens it gives the trader a very quick feel for what is going on.
+
+the appealing factor of a classification scheme is that it wont depend on absolute values instead of the structure of the market and also the changing nature of price action. As with almost any quantitative endeavour one can incorporate a level of comp;exity that misses the point and puts one on a track to nowhere.  Initially my approach was to collect tick data and recalculate the ohlc candle and include such detail as the bid offer at each of the opening highest and lowest and closing price, with a time of each.  This can answer queastion such as did the high occer before the low etc.  I have also include the median price, and the quantiles to eventually replace the ohlc's.  My thinking was that these were not previously included simply because of a lack of storage space and the appeal for the human audience. It may make better sense for a mahine to have access to these values and to squeeze value from these more detailed market summaries.
+
+For starters I reverted to the simplest approach possible.  There is a lot of hard experiende in that approach.  How to classify or categorize the market?  the first is to compare each bar with the one immediately preceding it.  There are 6 features that stand out.  The current bar:
+  1 closed up from the opening price.
+  2 is longer than the previous bar.
+  3 high is higher than the previous bar high,
+  4 high is higher than the previous bar low,
+  5 low is higher than the previous bar high and 
+  6 low is higher than the previous bar low.
+  
+  These six factors can be put into a 6 digit code where 1 is for true and zero for false.  Not all permuations are possible of course: if the current bar high is higher than the previous bar it goes withou saying that the current bar high is also higher than the previouus bar low. The schema above gives rise to exactly 20 'states'.  Each of these state can be given a unique number yielding a classification for all states in the market.  This comparison between closest bars can be repeated for each bar in the database.  This is called the level 0 comparison.  A comparison can be repeated for the next closest bar.  Lets call this the level 1 comparison.
+  
+  From a natural language processing point of view, there are now a market vocabulary of 20 words spoken by the market.
