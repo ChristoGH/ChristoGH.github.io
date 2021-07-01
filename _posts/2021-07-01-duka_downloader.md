@@ -179,5 +179,5 @@ directory_changer(original_path)
     duka USDZAR -d 2021-06-29
     duka USDZAR -d 2021-06-30
     Taking a break for 30 seconds.  There are 30 dates left!
-    Directory changed to:  /Users/christostrydom/Documents/github_repos/ae_mp
+    Directory changed to:  ../github_repos/ae_mp
 
