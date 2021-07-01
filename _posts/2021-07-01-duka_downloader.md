@@ -1,11 +1,11 @@
-# Title
+# Duka downloader
 
 
 
 ## The market data downloader
 
-In this notebook.  I illustrate how to download currency data from here https://www.dukascopy.com/swiss/english/marketwatch/historical/.  It is free!
-I have alreadt downloaded 10years of tick data for USDZAR and EURUSD.  I is a precious resource and I am grateful to Dukascopy for making this available.  Following the instructions below assumes you have installed duka from here https://pypi.org/project/duka/. Once again this is a really great resource and one I have used extensively.  It automates the process of downloading data - imagine downloading all that data 'by hand'!
+In this notebook, I illustrate how to download currency data from here https://www.dukascopy.com/swiss/english/marketwatch/historical/.  It is free!
+I have already downloaded 10 years of tick data for USDZAR and EURUSD.  It is a precious resource and I am grateful to Dukascopy for making this available.  Following the instructions below assumes you have installed duka from here https://pypi.org/project/duka/. This is a also another really great resource, and one I have used extensively.  It automates the process of downloading data - imagine downloading all that data 'by hand'!
 
 I designed this to download data in business day increments, avoiding weekends with spurious data. 
 
@@ -179,5 +179,5 @@ directory_changer(original_path)
     duka USDZAR -d 2021-06-29
     duka USDZAR -d 2021-06-30
     Taking a break for 30 seconds.  There are 30 dates left!
-    Directory changed to:  ../github_repos/ae_mp
+    Directory changed to:  /Users/christostrydom/Documents/github_repos/ae_mp
 
