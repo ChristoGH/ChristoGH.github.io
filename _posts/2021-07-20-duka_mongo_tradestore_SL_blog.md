@@ -1,6 +1,19 @@
-# Create trading signals!
+# Create trading signals
 
 
+
+### (for training a machinelearning (trading) model in the currency market)
+Understanding the financial market (any instrument any exchange) must rank as one of the more challenging projects out there.  The goal of this project remains to investigate if there is any identifiable structure in the market that may lead to a profitable trading strategy.  By looking at the price movement of any market it is evident that there are some key moments when a new direction is taken, key moments where the dynamics of the price action has changed. 
+
+It is easy to think the aim of trading is to predict 'the market'. Without understanding what a profitable trading opportunity is, we will be treating the market as a gambling house and loose, at the very least, a shirt.
+
+In this script I pursue one way to identify a identify a trading opportunity. It will be in hindsight only!  What good is that then you may ask?  We are in the business of learning from the past and if it doesnt transfer to knowledge of the present then we need to question what we are here for. That is, I will look at times when I would have wanted to be long or short of a currency pair, and even more importantly, when I would have wanted to do nothing at all. 
+
+The idea below was my first approach, as time went on, I designed at least two more signal identifiers and I will explain them in later blogs.  This script identifies the time to 'enter' the market and when to 'exit' it.  Again with perfect hindsight.  I have the following philosophy.  In designing these trade signals I do not wish to be in the market and be left exposed to the volatility that is so inherent to it.  The longer one is exposed to the market the longer the time window for new significant and market moving events.  But I pefer nor to live in hope.  The market is stochastic, but I prefer to minimize surprises.  Hence as I will illustrate below, due to the nature of the market, by tweaking some risk parameters time 'in' the market is kept to a minimum.
+
+Tick data as we collected in previous blogs, allow one to icoportate the cost of trading, at least to some degree.  This is an important consideration since profit on a shorter less risky time window is also less, but trading cost is fixed.  We always buy at the offer and always sell at the bid hence the cost of a complete trade is the spread or offer price - bid price.  This idea presents its own risk.  The spread is not something we control.  Hence in time of low volume or high uncertainty we are at the mercy of the entity we trade with.  More on that later.
+
+The script here builds on the mongodb code previously used.  Before we uploaded tick data. In this script we extract and search the database.  This is why we created and index on the time field.  We will search repeatedly on this field and the need for speed is compelling!
 
 ```python
 original_path=os.getcwd()
@@ -157,7 +170,9 @@ search_time,search_price,search_id=init_dict_fn(data_collection,
                                                 CURRENCY,
                                                 PROFIT_MARGIN,
                                                 STOP_LOSS)
+```
 
+```python
 while counter < ITERATIONS:
     counter+=1
     
