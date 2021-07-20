@@ -247,6 +247,6 @@ while counter < ITERATIONS:
 
 This is what the trading signals look like for 21 April 2021 for the USDZAR as an example, with a 5c profit target and a zero stop loss.  The graph below was done on tick data and only the Ask price, hence it looks somewhat unfamiliar.  But this way, we can see every single price recorded by this broker and we can simulate the real thing with some level of accuracy.
 
-![title](../images/USDZAR_5_0USDZAR_5_0_20210421.png)
+![title](images/USDZAR_5_0USDZAR_5_0_20210421.png)
 
 And that is it!  Now there is a way of create trade signals given some expectation of profit together with a minimum stop loss to be tolerated.  Notice that our take-profit value sometimes does not cover the entire range of a sizeable move and sometimes look too be too much for attractive opportunities.  Ideally we want to cater for signals irrespective of some hard coded rule.  More on that later.
